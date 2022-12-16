@@ -1,6 +1,6 @@
 
 body {
-    background-color: aquamarine;
+    background-color: rgb(127,255,212);
 }
 
 nav {
@@ -15,10 +15,14 @@ nav #text {
 
 .btn-sm {
     --bs-btn-padding-x: 2.5rem;
-    --bs-btn-bg: lightgray;
+    --bs-btn-bg: rgb(233,233,237);
     --bs-btn-color: black;
      font-weight: 700;
 } 
+
+.btn-secondary {
+   --bs-btn-border-color: grey;
+}
 
 .container {
     width: 100%;
@@ -28,19 +32,37 @@ nav #text {
 
 .form-select-sm {
     margin-right: 10px;
+    width: 245px; 
+    font-weight: 700;
+    background-color: rgb(233,233,237);
+    border-color: grey;
 }
 
 h6 {
     padding-top: 7px;
-    margin-right: 5px;
+    margin-right: 5px;    
 }
 
+footer {
+    height: 70px;
+}
+
+footer a {
+    color: rgb(183,158,206);
+}
+
+footer .bi-suit-heart-fill {
+    font-size: 12px;
+}
+
+p {
+    font-weight: 600;
+}
 
 #grid {
     width: 700px;
     height: 700px;
     margin: 60px auto;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -50,6 +72,7 @@ h6 {
     border: 1px solid black;
     cursor: pointer;
     color: black;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
