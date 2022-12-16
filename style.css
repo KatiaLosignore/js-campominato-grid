@@ -1,0 +1,53 @@
+
+body {
+    background-color: aquamarine;
+}
+
+nav {
+    height: 90px;
+}
+
+nav #text {
+    margin-left: 20px;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.btn-sm {
+    --bs-btn-padding-x: 2.5rem;
+    --bs-btn-bg: lightgray;
+    --bs-btn-color: black;
+     font-weight: 700;
+} 
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#grid {
+    width: 900px;
+    height: 900px;
+    margin: 60px auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#grid .cell {
+    border: 1px solid black;
+    height: calc(100% /10);
+    width: calc(100% /10);
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid .cell.clicked {
+    background-color: rgb(0,127,255);
+   
+}
