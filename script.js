@@ -19,8 +19,9 @@ buttonElement.addEventListener('click', function(){
         const cell = createCell(i);
 
 
-        cell.addEventListener('click', function (event) {
-            this.classList.add('clicked');
+        cell.addEventListener('click', () => {
+            cell.classList.toggle('clicked');
+            console.log(i);
         });
 
         gridElement.appendChild(cell);
